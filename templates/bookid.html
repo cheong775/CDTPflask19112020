@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='site.css')}}" />
+</head>
+<body>
+	
+	<h1> {{title}}  </h1>
+	<h1>HTTP method：{{method}}</h1>
+	<form method="post">
+		<div>
+			 Veuillez saisir le code ISBN du livre que vous recherchez
+		<input type="text" name="bookisbn" placeholder="BOOK ISBN"/>
+		
+		</div>
+		
+		<input type="submit"></br>
+		{{tip1}} {{tip2}}
+        <div>
+			 Veuillez saisir le nom du livre que vous recherchez
+		<input type="text" name="bookname" placeholder="NOM DE LIVRE"/> 
+		
+		</div>
+		
+		<input type="submit"></br>
+		{{tip1}} {{tip2}}
+
+	</form>
+
+
+</body>
+</html>
